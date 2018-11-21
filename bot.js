@@ -29,7 +29,7 @@ client.user.setStatus("dnd")
 
 
 client2.on('guildMemberAdd', member => {
-const mohamed= member.guild.channels.get("509812306058805288");
+const mohamed= member.guild.channels.get("505479736236179498");
 if(!mohamed) return;
 if(mohamed) {
 setTimeout(() => mohamed.send(`**__# Weélcooome To Quietness..,__:dove: :leaves:**`), 4000)        
