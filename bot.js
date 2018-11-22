@@ -35,7 +35,7 @@ client.on("guildMemberAdd", async member => {
       moment = require("moment"),
       date = moment.duration(new Date() - member.user.createdAt).format("d");
 
-  if(date <30) {
+  if(date <7) {
     member.ban("Member account age is lower than 7 days.")
   }
 });
