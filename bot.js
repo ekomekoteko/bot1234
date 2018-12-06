@@ -30,14 +30,19 @@ client.user.setStatus("dnd")
 
 
 
-client.on("guildMemberAdd", async member => {
-  let moment2 = require('moment-duration-format'),
-      moment = require("moment"),
-      date = moment.duration(new Date() - member.user.createdAt).format("d");
-
-  if(date <7) {
-    member.ban("Member account age is lower than 7 days.")
-  }
+client.on('guildMemberRemove', member => {
+    var embed = new Discord.RichEmbed()
+.setAuthor(member.user.username, member.user.avatarURL)
+.setThumbnail(member.user.avatarURL)
+.setTitle('***خرج من السيرفر***')
+.addField('**الاسم**',`[ ${member} ]`)
+.addField('**عدد الاعضاء**',`[ ${member.guild.memberCount} ]`,true)
+.setColor('Random')
+   
+   var channel =member.guild.channels.find('name', 'welcome')
+   if (!channel) return;
+         channel.send({embed : embed});
+ 
 });
 
 
