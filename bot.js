@@ -30,6 +30,8 @@ client.user.setStatus("dnd")
 
 
 
+
+
 client.on('guildMemberRemove', member => {
     var embed = new Discord.RichEmbed()
 .setAuthor(member.user.username, member.user.avatarURL)
@@ -44,6 +46,8 @@ client.on('guildMemberRemove', member => {
          channel.send({embed : embed});
  
 });
+
+
 
 
 
