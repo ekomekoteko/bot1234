@@ -72,20 +72,18 @@ client.on("guildMemberAdd", m => {
 
 client.on("ready", async  => {
 setInterval(function(){
-client.channels.find('id', '520943015540293637').setName("W");
-client.channels.find('id', '520943015540293637').setName("We");
-client.channels.find('id', '520943015540293637').setName("Wel");
-client.channels.find('id', '520943015540293637').setName("Welc");
-client.channels.find('id', '520943015540293637').setName("Welco");
-client.channels.find('id', '520943015540293637').setName("Welcom");
-client.channels.find('id', '520943015540293637').setName("Welcome");
-client.channels.find('id', '520943015540293637').setName("Welcome T");
-client.channels.find('id', '520943015540293637').setName("Welcome To");
-client.channels.find('id', '520943015540293637').setName("Welcome To C");
-client.channels.find('id', '520943015540293637').setName("Welcome To Co");
-client.channels.find('id', '520943015540293637').setName("Welcome To Cod");
-client.channels.find('id', '520943015540293637').setName("Welcome To Code");
-client.channels.find('id', '520943015540293637').setName("Welcome To Codes");
+client.channels.find('id', '520950367954141194').setName("W");
+client.channels.find('id', '520950367954141194').setName("We");
+client.channels.find('id', '520950367954141194').setName("Wel");
+client.channels.find('id', '520950367954141194').setName("Welc");
+client.channels.find('id', '520950367954141194').setName("Welco");
+client.channels.find('id', '520950367954141194').setName("Welcom");
+client.channels.find('id', '520950367954141194').setName("Welcome");
+client.channels.find('id', '520950367954141194').setName("Welcome T");
+client.channels.find('id', '520950367954141194').setName("Welcome To");
+client.channels.find('id', '520950367954141194').setName("Welcome To O");
+client.channels.find('id', '520950367954141194').setName("Welcome To OB");
+client.channels.find('id', '520950367954141194').setName("Welcome To OBX");
   }, 3000);
 });
 
